@@ -8,8 +8,8 @@ public class Main {
         FileHandler handler = new FileHandler();
         String fileName = "myfile";
         String fileContent = "My very important information.";
-        String result = handler.writeFile(fileContent);
-        String content = handler.readFile(BASE_PATH + fileName + ".txt");
+        String result = handler.writeFile(fileContent,fileName);//add fileName parameter
+        String content = handler.readFile(BASE_PATH + fileName+".txt");
         getOutput("RESULT: " + result);
         getOutput("FILE CONTENT: " + content);
     }
